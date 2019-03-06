@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Universal */
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7rem;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 13% auto;
+    grid-template-rows: 7% 6% auto auto;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "aside main"
+        "aside main"
+}
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 1rem 1rem 1rem;
+}
+nav{
+    grid-area: nav;
+    letter-spacing: .25rem;
+    font-size: 1.2rem;
+    background: #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+aside{
+    grid-area: aside;
+   
+}
+main{
+    grid-area: main;
+   
+}
+
+/* Utility */
+.uppercase{
+    text-transform: uppercase;
+}
+
+.hilight{
+    color: #4CAF50;
+}
+.list{
+    list-style: none;
+}
+/* Header */
+
+header > :first-child{
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color: #555555;
+}
+header > :last-child{
+    font-weight: normal;
+    letter-spacing: .28rem;
+    font-size: 1rem;
+}
+
+/* Navbar */
+
+nav ul{
+    display: flex;
+}
+nav ul a{
+    color: #fff;
+    padding: 1.2rem;
+}
+
+nav ul a:hover{
+    background: #fff;
+    color: #000;
+}
