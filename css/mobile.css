@@ -2,6 +2,7 @@
 body{
     grid-template-rows: 2% 1.3% auto auto;
 }
+
 header > :last-child{
     display: none;
 }
@@ -17,5 +18,17 @@ nav > :first-child{
 .button{
     margin-bottom: 1rem;
 }
+
+    /* Main */
+    .html,
+    .css,
+    .js,
+    .other-languages,
+    .frameworks,
+    .exercises,
+    .templates,
+    .main-footer{
+        padding: 2rem;
+    }
 
 

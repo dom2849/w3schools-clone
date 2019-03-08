@@ -19,7 +19,7 @@ body{
     line-height: 1.7rem;
     display: grid;
     grid-template-columns: 230px auto;
-    grid-template-rows: 2% 1.3% auto 7.5%;
+    grid-template-rows: 2% 1.3% auto auto;
     grid-template-areas: 
         "header header"
         "nav nav"
@@ -131,7 +131,6 @@ footer{
     margin-top: 3rem;
 }
 
-
 .example{
     flex: 1;
     min-width: 0;
@@ -184,14 +183,19 @@ footer{
 }
 
 /* Header */
-
+.header__flex-container{
+    justify-content: space-between;
+    align-items: center;
+}
 header > :first-child,
 header > :last-child{
     font-weight: normal;
 }
+
 header > :first-child{
     letter-spacing: .1rem;
 }
+
 header > :last-child{
     letter-spacing: .28rem;
     font-size: 1rem;
@@ -200,32 +204,35 @@ header > :last-child{
 
 /* Navbar */
 
-nav ul{
+.nav__list{
     display: flex;
 }
-nav ul a{
+
+.nav__list a{
     color: #fff;
     padding: 1.2rem;
 }
 
-nav ul a:hover{
+.nav__list a:hover{
     background: #fff;
     color: #000;
 }
 
 /* Aside */
+
 aside > :first-child{
     padding-top: 1rem;
 }
-aside div{
+
+.aside__list{
     padding: 0 1rem 1rem 1rem;
 }
-aside ul a{
+.aside__list a{
     display: inline-block;
     width: 100%;
     color: #333;
 }
-aside ul a:hover{
+.aside__list a:hover{
     background: #ccc;
 }
 
@@ -281,12 +288,12 @@ aside ul a:hover{
 .frameworks h3, .button{
     margin-bottom: 1.5rem;
 }
-.frameworks .description,
-.frameworks img{
+.frameworks__description,
+.frameworks__img{
     margin-top: 1rem;
 }
 
-.image:hover{
+.frameworks__img:hover{
     opacity: .60;
 }
 
@@ -296,7 +303,7 @@ aside ul a:hover{
     text-align: center;
 }
 
-.exercises a{
+.exercises__flex-item{
     flex: 1;
     margin: 0 1rem 1.5rem 1rem;
     padding: 1rem;
@@ -307,14 +314,16 @@ aside ul a:hover{
 .templates{
     background: var(--light-color);
 }
-.templates .flex-container{
+.templates__flex-container{
     flex-direction: column;
     align-items: center;
 }
+
 .templates .small-heading{
     margin-bottom: 2rem;
 }
-.templates img{
+
+.templates__img{
     width: 100%;
     margin-bottom: 1.5rem;
 }
@@ -328,11 +337,11 @@ aside ul a:hover{
 .main-footer p{
     font-size: .9rem;
 }
-.main-footer .flex-container{
+.main-footer__flex-container{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
 }
-.main-footer i{
-    margin-top: 2rem;
+.main-footer__icon{
+    margin-top: 1rem;
 }

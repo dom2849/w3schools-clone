@@ -16,25 +16,26 @@
 </head>
 
 <body>
-    <header>
+    <header class = "header__flex-container flex-container">
         <h1 class="dark-grey">w3schools<span class="hilight">.com</span></h1>
-        <h3 class="uppercase">The world's largest web developer site</h3>
+        <p class="uppercase">The world's largest web developer site</p>
     </header>
 
     <nav>
-        <ul class="list uppercase">
+        <ul class="nav__list list uppercase">
             <li><a href="#">Tutorials <i class="fas fa-caret-down"></i> </a></li>
             <li><a href="#">References <i class="fas fa-caret-down"></i> </a></li>
             <li><a href="#">Examples <i class="fas fa-caret-down"></i> </a></li>
             <li class = "invisible"><a href="#">Exercises <i class="fas fa-caret-down"></i> </a></li>
         </ul>
-        <ul class="list">
+        <ul class="nav__list list">
             <li> <a href="#"> <i class="fas fa-globe-americas"> </i> </a> </li>
             <li> <a href="#"> <i class="fas fa-search"></i> </a> </li>
         </ul>
     </nav>
+
     <aside>
-        <div>
+        <div class = "aside__list">
             <h2 class="small-heading">HTML and CSS</h2>
             <ul class="list">
                 <li><a href="#">Learn HTML</a></li>
@@ -48,7 +49,7 @@
                 <li><a href="#">Learn How To</a></li>
             </ul>
         </div>
-        <div>
+        <div class = "aside__list">
             <h2 class="small-heading">HTML and CSS</h2>
             <ul class="list">
                 <li><a href="#">Learn HTML</a></li>
@@ -62,7 +63,7 @@
                 <li><a href="#">Learn How To</a></li>
             </ul>
         </div>
-        <div>
+        <div class = "aside__list">
             <h2 class="small-heading">HTML and CSS</h2>
             <ul class="list">
                 <li><a href="#">Learn HTML</a></li>
@@ -76,7 +77,7 @@
                 <li><a href="#">Learn How To</a></li>
             </ul>
         </div>
-        <div>
+        <div class = "aside__list">
             <h2 class="small-heading">HTML and CSS</h2>
             <ul class="list">
                 <li><a href="#">Learn HTML</a></li>
@@ -93,7 +94,7 @@
     </aside>
     <main>
         <section class="html">
-            <div class="container flex-container">
+            <div class="container flex-container html__flex-container">
                 <div class="description">
                     <h2 class="large-heading dark-grey">HTML</h2>
                     <h3 class="medium-heading dark-grey">The language for building web pages</h3>
@@ -120,7 +121,7 @@
         </section>
 
         <section class="css">
-            <div class="container flex-container">
+            <div class="container flex-container css__flex-container">
                 <div class="example card">
                     <h2 class="medium-heading">CSS Example: </h2>
                     <div class="code card--white">
@@ -151,7 +152,7 @@
         </section>
 
         <section class="js">
-            <div class="container flex-container">
+            <div class="container flex-container js__flex-container">
                 <div class="description">
                     <h2 class="large-heading dark-grey">Javascript</h2>
                     <h3 class="medium-heading">The language for programming web pages</h3>
@@ -206,15 +207,15 @@
         </section>
 
         <section class="frameworks">
-            <div class="container flex-container">
+            <div class="container flex-container frameworks__flex-container">
                 <div class="description">
                     <h2 class="medium-heading">W3.CSS</h2>
                     <h3 class="small-heading">A modern CSS framework for faster and better responsive web pages</h3>
                     <a href="#" class="button button--dark uppercase">Learn W3.CSS </a>
                 </div>
-                <div class="description">
+                <div class="description frameworks__description">
                     <h2 class="medium-heading">Color Picker</h2>
-                    <a href="#" class="image"> <img src="images/color-picker.png" alt = "Color Picker"> </a>
+                    <a href="#" class="frameworks__image image"> <img src="images/color-picker.png" alt = "Color Picker"> </a>
                 </div>
 
                 <div class="description">
@@ -230,33 +231,33 @@
             <div class="container container--small">
                 <h2 class="medium-heading">Exercises</h2>
                 <h3 class="small-heading">Test yourself with exercises</h3>
-                <div class="flex-container">
-                    <a href="#" class="button button--green">HTML Exercises </a>
-                    <a href="#" class="button button--green">HTML Exercises </a>
-                    <a href="#" class="button button--green">HTML Exercises </a>
+                <div class="flex-container exercises__flex-container">
+                    <a href="#" class="exercises__flex-item button button--green">HTML Exercises </a>
+                    <a href="#" class="exercises__flex-item button button--green">HTML Exercises </a>
+                    <a href="#" class="exercises__flex-item button button--green">HTML Exercises </a>
                 </div>
-                <div class="flex-container">
-                    <a href="#" class="button button--green">HTML Exercises </a>
-                    <a href="#" class="button button--green">HTML Exercises </a>
-                    <a href="#" class="button button--green">HTML Exercises </a>
-                    <a href="#" class="button button--green">HTML Exercises </a>
-                    <a href="#" class="button button--green">HTML Exercises </a>
+                <div class="flex-container exercises__flex-container">
+                    <a href="#" class="exercises__flex-item button button--green">HTML Exercises </a>
+                    <a href="#" class="exercises__flex-item button button--green">HTML Exercises </a>
+                    <a href="#" class="exercises__flex-item button button--green">HTML Exercises </a>
+                    <a href="#" class="exercises__flex-item button button--green">HTML Exercises </a>
+                    <a href="#" class="exercises__flex-item button button--green">HTML Exercises </a>
                 </div>
             </div>
         </section>
 
         <div class="templates">
-            <div class="container container--small flex-container">
+            <div class="container container--small flex-container templates__flex-container">
                 <h2 class="medium-heading">Web Templates</h2>
                 <h3 class="small-heading">Browse our selection of <strong>free</strong> responsive HTML Templates</h3>
-                <a href="#"><img src="images/templates.jpg" alt="Website Templates"></a>
+                <a href="#"><img src="images/templates.jpg" alt="Website Templates" class="templates__img"></a>
                 <a href="#" class="button button--dark uppercase">Browse Templates </a>
             </div>
         </div>
         
     </main>
     <footer class = "main-footer">
-        <div class="flex-container">
+        <div class="flex-container main-footer__flex-container">
             <ul class="list">
                 <a href="#" class="button button--light uppercase">Web Certificates </a>
                 <a href="#" class="button button--light uppercase">Quizzes </a>
@@ -268,10 +269,9 @@
                 <a href="#" class="uppercase color-light hover-green">About </a>
             </ul>
         </div>
-
         <p>W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our <a class = "color-light underline hover-green" href="#">terms of use</a>, <a class = "color-light underline hover-green" href="#">cookie and privacy policy</a>.</p>
         <p><a class = "color-light underline hover-green" href="#">Copyright 1999-2019</a> by Refsnes Data. All Rights Reserved.</p>
-        <i class="far fa-thumbs-up fa-2x"></i>
+        <i class="far fa-thumbs-up fa-2x main-footer__icon"></i>
     </footer>
 </body>
 

@@ -8,9 +8,9 @@
     }
 }
 
-/* Header */
-header,
-.flex-container{
+.js__flex-container,
+.html__flex-container,
+.css__flex-container{
     flex-direction: column;
 }
 
@@ -31,15 +31,10 @@ header > :first-child{
 }
 
 .other-languages__grid-container{
-    grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
 }
 
-.exercises .flex-container,
-.frameworks .flex-container,
-.main-footer .flex-container{
-    flex-direction: row;
-}
+
 
 
 

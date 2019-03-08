@@ -1,11 +1,17 @@
+.header__flex-container{
+    flex-direction: column;
+}
+
 nav > :last-child{
     display: none;
 }
+
 .other-languages__grid-container{
     grid-template-columns: 1fr;
 }
-.frameworks .flex-container,
-.exercises .flex-container{
+
+.frameworks__flex-container,
+.exercises__flex-container{
     flex-direction: column;
 }
 
@@ -19,6 +25,9 @@ nav > :last-child{
     margin-bottom: 2.4rem;
 }
 
-footer .flex-container > :first-child{
+.main-footer__flex-container > :first-child{
     display: none;
+}
+.main-footer__flex-container{
+    justify-content: flex-end;
 }
