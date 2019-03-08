@@ -15,15 +15,15 @@
 
 <body>
     <header>
-        <h1>w3schools<span class="hilight">.com</span></h1>
+        <h1 class="dark-grey">w3schools<span class="hilight">.com</span></h1>
         <h3 class="uppercase">The world's largest web developer site</h3>
     </header>
     <nav>
         <ul class="list uppercase">
-            <li><a href="#">Tutorials</a></li>
-            <li><a href="#">References</a></li>
-            <li><a href="#">Examples</a></li>
-            <li><a href="#">Exercises</a></li>
+            <li><a href="#">Tutorials <i class="fas fa-caret-down"></i> </a></li>
+            <li><a href="#">References <i class="fas fa-caret-down"></i> </a></li>
+            <li><a href="#">Examples <i class="fas fa-caret-down"></i> </a></li>
+            <li><a href="#">Exercises <i class="fas fa-caret-down"></i> </a></li>
         </ul>
         <ul class="list">
             <li> <a href="#"> <i class="fas fa-globe-americas"> </i> </a> </li>
@@ -202,8 +202,74 @@
             </div>
         </section>
 
+        <section class="frameworks">
+            <div class="container flex-horizontal">
+                <div class="description">
+                    <h2 class="medium-heading">W3.CSS</h2>
+                    <h3 class="small-heading">A modern CSS framework for faster and better responsive web pages</h3>
+                    <a href="#" class="button button--dark uppercase">Learn W3.CSS </a>
+                </div>
+                <div class="description">
+                    <h2 class="medium-heading">Color Picker</h2>
+                    <a href="#" class="image"> <img src="images/color-picker.png" alt = "Color Picker"> </a>
+                </div>
+
+                <div class="description">
+                    <h2 class="medium-heading">Bootstrap</h2>
+                    <h3 class="small-heading">A CSS framework for designing better web pages</h3>
+                    <a href="#" class="button button--dark uppercase">Learn Bootstrap 3 </a>
+                    <a href="#" class="button button--dark uppercase">Learn Bootstrap 4 </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="exercises bg-dark">
+            <div class="container container--small">
+                <h2 class="medium-heading">Bootstrap</h2>
+                <h3 class="small-heading">A CSS framework for designing better web pages</h3>
+                <div class="flex-horizontal">
+                    <a href="#" class="button button--green">HTML Exercises </a>
+                    <a href="#" class="button button--green">HTML Exercises </a>
+                    <a href="#" class="button button--green">HTML Exercises </a>
+                </div>
+                <div class="flex-horizontal">
+                    <a href="#" class="button button--green">HTML Exercises </a>
+                    <a href="#" class="button button--green">HTML Exercises </a>
+                    <a href="#" class="button button--green">HTML Exercises </a>
+                    <a href="#" class="button button--green">HTML Exercises </a>
+                    <a href="#" class="button button--green">HTML Exercises </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="templates">
+            <div class="container container--small flex-vertical">
+                <h2 class="medium-heading">Web Templates</h2>
+                <h3 class="small-heading">Browse our selection of <strong>free</strong> responsive HTML Templates</h3>
+                <a href="#"><img src="images/templates.jpg" alt="Website Templates"></a>
+                <a href="#" class="button button--dark uppercase">Browse Templates </a>
+            </div>
+        </div>
+        
     </main>
-    <footer></footer>
+    <footer class = "main-footer">
+        <div class="flex-horizontal">
+            <ul class="list">
+                <a href="#" class="button button--light uppercase">Web Certificates </a>
+                <a href="#" class="button button--light uppercase">Quizzes </a>
+                <a href="#" class="button button--light uppercase">Exercises </a>
+            </ul>
+            <ul class="list">
+                <a href="#" class="uppercase color-light hover-green">Forum </a>
+                <span> | </span>
+                <a href="#" class="uppercase color-light hover-green">About </a>
+            </ul>
+        </div>
+
+        <p>W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our <a class = "color-light underline hover-green" href="#">terms of use</a>, <a class = "color-light underline hover-green" href="#">cookie and privacy policy</a>.</p>
+        <p><a class = "color-light underline hover-green" href="#">Copyright 1999-2019</a> by Refsnes Data. All Rights Reserved.</p>
+        <i class="far fa-thumbs-up fa-2x"></i>
+    </footer>
 </body>
 
 </html>
