@@ -1,0 +1,21 @@
+
+body{
+    grid-template-rows: 2% 1.3% auto auto;
+}
+header > :last-child{
+    display: none;
+}
+
+nav > :first-child{
+    display: none;
+}
+
+.example{
+    display: none;
+}
+
+.button{
+    margin-bottom: 1rem;
+}
+
+

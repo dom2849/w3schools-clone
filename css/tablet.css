@@ -1,0 +1,24 @@
+nav > :last-child{
+    display: none;
+}
+.other-languages__grid-container{
+    grid-template-columns: 1fr;
+}
+.frameworks .flex-container,
+.exercises .flex-container{
+    flex-direction: column;
+}
+
+.exercises .container > :last-child{
+    display: none;
+}
+
+.large-heading{
+    font-size: 4rem;
+    letter-spacing: .14rem;
+    margin-bottom: 2.4rem;
+}
+
+footer .flex-container > :first-child{
+    display: none;
+}

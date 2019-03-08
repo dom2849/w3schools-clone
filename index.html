@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 1350px)" href="css/normal-screen.css">      
+    <link rel="stylesheet" media="screen and (max-width: 820px)" href="css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 620px)" href="css/mobile.css">
 
     <title>W3Schools Online Web Tutorials</title>
 </head>
@@ -18,12 +20,13 @@
         <h1 class="dark-grey">w3schools<span class="hilight">.com</span></h1>
         <h3 class="uppercase">The world's largest web developer site</h3>
     </header>
+
     <nav>
         <ul class="list uppercase">
             <li><a href="#">Tutorials <i class="fas fa-caret-down"></i> </a></li>
             <li><a href="#">References <i class="fas fa-caret-down"></i> </a></li>
             <li><a href="#">Examples <i class="fas fa-caret-down"></i> </a></li>
-            <li><a href="#">Exercises <i class="fas fa-caret-down"></i> </a></li>
+            <li class = "invisible"><a href="#">Exercises <i class="fas fa-caret-down"></i> </a></li>
         </ul>
         <ul class="list">
             <li> <a href="#"> <i class="fas fa-globe-americas"> </i> </a> </li>
@@ -90,7 +93,7 @@
     </aside>
     <main>
         <section class="html">
-            <div class="container flex-horizontal">
+            <div class="container flex-container">
                 <div class="description">
                     <h2 class="large-heading dark-grey">HTML</h2>
                     <h3 class="medium-heading dark-grey">The language for building web pages</h3>
@@ -117,7 +120,7 @@
         </section>
 
         <section class="css">
-            <div class="container flex-horizontal">
+            <div class="container flex-container">
                 <div class="example card">
                     <h2 class="medium-heading">CSS Example: </h2>
                     <div class="code card--white">
@@ -148,7 +151,7 @@
         </section>
 
         <section class="js">
-            <div class="container flex-horizontal">
+            <div class="container flex-container">
                 <div class="description">
                     <h2 class="large-heading dark-grey">Javascript</h2>
                     <h3 class="medium-heading">The language for programming web pages</h3>
@@ -203,7 +206,7 @@
         </section>
 
         <section class="frameworks">
-            <div class="container flex-horizontal">
+            <div class="container flex-container">
                 <div class="description">
                     <h2 class="medium-heading">W3.CSS</h2>
                     <h3 class="small-heading">A modern CSS framework for faster and better responsive web pages</h3>
@@ -225,14 +228,14 @@
 
         <section class="exercises bg-dark">
             <div class="container container--small">
-                <h2 class="medium-heading">Bootstrap</h2>
-                <h3 class="small-heading">A CSS framework for designing better web pages</h3>
-                <div class="flex-horizontal">
+                <h2 class="medium-heading">Exercises</h2>
+                <h3 class="small-heading">Test yourself with exercises</h3>
+                <div class="flex-container">
                     <a href="#" class="button button--green">HTML Exercises </a>
                     <a href="#" class="button button--green">HTML Exercises </a>
                     <a href="#" class="button button--green">HTML Exercises </a>
                 </div>
-                <div class="flex-horizontal">
+                <div class="flex-container">
                     <a href="#" class="button button--green">HTML Exercises </a>
                     <a href="#" class="button button--green">HTML Exercises </a>
                     <a href="#" class="button button--green">HTML Exercises </a>
@@ -243,7 +246,7 @@
         </section>
 
         <div class="templates">
-            <div class="container container--small flex-vertical">
+            <div class="container container--small flex-container">
                 <h2 class="medium-heading">Web Templates</h2>
                 <h3 class="small-heading">Browse our selection of <strong>free</strong> responsive HTML Templates</h3>
                 <a href="#"><img src="images/templates.jpg" alt="Website Templates"></a>
@@ -253,7 +256,7 @@
         
     </main>
     <footer class = "main-footer">
-        <div class="flex-horizontal">
+        <div class="flex-container">
             <ul class="list">
                 <a href="#" class="button button--light uppercase">Web Certificates </a>
                 <a href="#" class="button button--light uppercase">Quizzes </a>

@@ -1,0 +1,45 @@
+
+@media (max-width: 1200px){
+    body{
+        grid-template-columns: 1fr;
+    }
+    aside{
+        display: none;
+    }
+}
+
+/* Header */
+header,
+.flex-container{
+    flex-direction: column;
+}
+
+header > :first-child{
+    margin-bottom: .8rem;
+}
+
+/* Navigation List */
+.invisible{
+    display: none;
+}
+
+/* Main Content */
+.description{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    order: -1;
+}
+
+.other-languages__grid-container{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.exercises .flex-container,
+.frameworks .flex-container,
+.main-footer .flex-container{
+    flex-direction: row;
+}
+
+
+
